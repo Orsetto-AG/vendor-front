@@ -1,8 +1,8 @@
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:8000/api', // eg:'https://your-marketplace.com/api'
+  baseUrl: 'https://api.orsetto.ch/api', // eg:'https://your-marketplace.com/api'
   chatUrl: '<Your Chat base url>', // eg:'https://your-chaturl.com/'
-  imageUrl: 'http://localhost:8000/api/media/image-resize', // eg:'https://your-marketplace.com/api/media/image-resize'
+  imageUrl: 'https://api.orsetto.ch/api/media/image-resize', // eg:'https://your-marketplace.com/api/media/image-resize'
   videoUrl: '<Your API url for video url>', //eg:'https://your-marketplace.com-videourl/
   imageSupportFile: "120 x 120px PNG or JPG file.", // 'Reference for Image types & size handled in UI. Changing this will not impact file dimension or file extension validations' 
   imageType: /(\.jpg|\.jpeg|\.png)$/i,  // 'List of allowed image file extensions. This config when changed here, should be updated in backend config as well.'
