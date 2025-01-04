@@ -14,6 +14,7 @@ jobs:
         node-version: 18.x
     - run: npm install
     - run: npm run large-build
+
     - name: Transfer Build Folder on EC2 Instance
       uses: easingthemes/ssh-deploy@v2.1.4
       env:
@@ -21,5 +22,5 @@ jobs:
         REMOTE_HOST: ${{ secrets.DEPLOY_HOST }}
         REMOTE_USER: ${{ secrets.DEPLOY_USER }}
         REMOTE_PORT: ${{ secrets.DEPLOY_PORT }}
-        SOURCE: "build/"
+        SOURCE: "dist/"
         TARGET: ${{ secrets.DEPLOY_TARGET }}
